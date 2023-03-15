@@ -91,7 +91,7 @@ public class PutEvents {
             }
 
         } catch (EventBridgeException e) {
-            e.printStackTrace();
+			log.info("Exception: " + e);
 
             System.err.println(e.awsErrorDetails().errorMessage());
             System.exit(1);
